@@ -1,0 +1,7 @@
+<mvc:View controllerName="com.treinamento.demoRouter1.controller.Root" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<App id="app">
+		<!-- Dar um Id ao controle App do root controller p/ referenciá-lo no router -->
+		
+	</App>
+</mvc:View>

@@ -1,0 +1,28 @@
+1) Determinar uma "root view". Esta deverá ter apenas o controle "App", onde as outras serão colocadas pelo outer
+
+Manifest - Code Editor ==========================================================
+
+1) Verificar a configuração "sap.ui5".rootView.viewName no manifest. Ela deve apontar para sua rootView.
+2) Verificar a configuração "sap.ui5".routing.config.routerClass no manifest. Ela deve conter uma classe de roteamento. Utilizaremos o valor "sap.m.routing.Router"
+
+Manifest - Editor gráfico =======================================================
+
+Na aba "routing":
+
+Default configuration:
+	1) Preencher View Path com o namespace + caminho da pasta onde estão as views. (ex: com.treinamento.demoRouter1.view)
+	2) Preencher o campo "Control ID" com o nome do controle onde as views serão posicionadas.
+	3) Preencher o campo "Control Aggregation" com o nome da agregação do controle informado no campo anterior onde serão colocadas as views.
+
+	4) Crie targets p/ cada uma das views, informando (neste caso) os valores para control aggregation e ID informados anteriormente
+
+	5) Crie uma rota p/ cada view, apontando para seu respectivo target
+	
+	* O campo "pattern" da rota que corresponde à view inicial DEVE ficar vazio;
+	* O campo "pattern" das demais views não podem ficar vazios
+	
+
+
+
+
+não esquecer da linha: "this.getRouter().initialize();" no método init do component.js
